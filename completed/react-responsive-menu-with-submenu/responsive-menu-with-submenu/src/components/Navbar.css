@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-logo h2 {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* Submenu container */
+.submenu-container {
+  position: relative;
+}
+
+/* Submenu styles */
+.submenu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  display: none;
+  padding: 0;
+  width: 200px;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px;
+  display: block;
+}
+
+.submenu li a:hover {
+  background-color: #555;
+}
+
+/* Show submenu when open */
+.submenu.open {
+  display: block;
+}
+
+/* Hamburger Menu Icon */
+.navbar-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-menu-icon i {
+  font-size: 24px;
+  color: white;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .navbar-menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .submenu {
+    position: static;
+    display: none; /* Initially hide submenu on small screens */
+  }
+
+  .submenu.open {
+    display: block; /* Show submenu when toggled */
+  }
+}

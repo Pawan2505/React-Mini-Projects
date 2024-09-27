@@ -1,0 +1,42 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.profile-header img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-details {
+  text-align: left;
+}
+
+.edit-profile-form {
+  text-align: left;
+}
+
+.edit-profile-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.edit-profile-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
